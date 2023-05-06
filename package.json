@@ -1,0 +1,22 @@
+{
+	"name": "filename-lint",
+	"version": "1.0.0",
+	"description": "A filename linter",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"prepare": "husky install",
+		"lint:lint-staged": "lint-staged",
+		"lint:commitlint": "commitlint"
+	},
+	"keywords": ["fkworld", "filename", "linter"],
+	"author": "fkworld",
+	"license": "MIT",
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.3",
+		"@commitlint/config-conventional": "^17.6.3",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
+		"rome": "^12.0.0"
+	}
+}
