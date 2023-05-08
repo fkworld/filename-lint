@@ -3,5 +3,5 @@ module.exports = {
 		"rome format --write",
 		"rome check --apply-unsafe",
 	],
-	"**/*.{md,json,html,css,yaml,yml}": ["rome format --write"],
+	"**/*": ["node dist/main.js"],
 };

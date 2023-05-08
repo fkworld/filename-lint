@@ -2,12 +2,11 @@
 	"name": "filename-lint",
 	"version": "1.0.0",
 	"description": "A filename linter",
-	"main": "index.js",
-	"type": "module",
 	"scripts": {
 		"prepare": "husky install",
-		"lint:lint-staged": "lint-staged",
-		"lint:commitlint": "commitlint"
+		"lint:lint-staged": "lint-staged --verbose",
+		"lint:commitlint": "commitlint",
+		"build": "esbuild --bundle src/main.ts --outfile=dist/main.js --platform=node --target=node18 --minify"
 	},
 	"keywords": ["fkworld", "filename", "linter"],
 	"author": "fkworld",
@@ -15,8 +14,12 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.6.3",
 		"@commitlint/config-conventional": "^17.6.3",
+		"@types/node": "^20.1.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.2.2",
 		"rome": "^12.0.0"
+	},
+	"dependencies": {
+		"esbuild": "^0.17.18"
 	}
 }

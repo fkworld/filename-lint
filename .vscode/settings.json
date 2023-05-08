@@ -1,9 +1,24 @@
 {
-	"cSpell.words": ["commitlint", "vite"],
-	"editor.codeActionsOnSave": {
-		"quickfix.rome": true,
-		"source.organizeImports.rome": true
-	},
-	"editor.defaultFormatter": "rome.rome",
-	"editor.formatOnSave": true
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "cSpell.words": ["commitlint", "vite"],
+  "editor.codeActionsOnSave": {
+    "quickfix.rome": true,
+    "source.organizeImports.rome": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
