@@ -92,8 +92,9 @@ function checkFilename(
 		return CheckResult.Ignore;
 	}
 
+	const basename = path.basename(filename, matchedExt);
+
 	const isMatchAnyRule = rules[matchedExt].some((rule) => {
-		const basename = path.basename(filename, matchedExt);
 		const isMatchRule = CHECK_FUNCTIONS[rule](basename);
 		return isMatchRule;
 	});
